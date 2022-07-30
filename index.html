@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            font-family: Verdana;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .btn-container{
+            display: flex;
+            gap: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            flex-direction: column;
+            margin: 15px;
+        }
+        .btn-container > h2{
+            font-size: 1.5em;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 3em;
+            margin: 0;
+            width:100%;
+            text-align: center;
+        }
+    </style>
+    <title>CSS animations for buttons</title>
+</head>
+<body>
+
+    <main class="container">
+        <div class='btn-container'>
+            <h2>Small buttons </h2>
+            <button class="btn btn-sm animated-line-button">line animation</button>
+            <button class="btn btn-sm animated-progress-button">progress animation</button>
+            <button class="btn btn-sm animated-circle-button">circle animation</button>
+            <button class="btn btn-sm animated-border-button">border animation</button>
+        </div>
+    
+        <div class='btn-container'>
+            <h2> Normal buttons </h2>
+            <button class="btn animated-line-button">line animation</button>
+            <button class="btn animated-progress-button">progress animation</button>
+            <button class="btn animated-circle-button">circle animation</button>
+            <button class="btn animated-border-button">border animation</button>
+        </div>
+    
+        <div class='btn-container'>
+            <h2> Large buttons </h2>
+            <button class="btn btn-lg animated-line-button">line animation</button>
+            <button class="btn btn-lg animated-progress-button">progress animation</button>
+            <button class="btn btn-lg animated-circle-button">circle animation</button>
+            <button class="btn btn-lg animated-border-button">border animation</button>
+        </div>
+    </main>
+
+</body>
+</html>
